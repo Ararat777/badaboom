@@ -1,0 +1,640 @@
+
+	<header>
+	   
+		<div class="wrap_top_line">
+			<div class="top_line content">
+			     
+				<h1><a href="/" class="logo"><%= image_tag "/assets/logo.png" %></a></h1>
+				<nav>
+					<ul>
+						<li><a href="pdf/badaboom.pdf" target="_blank">White Paper</a></li>
+						<li><a href="#goal">Наша цель</a></li>
+						<li><a href="#about">О проекте</a></li>
+						<li><a href="#ico">ICO</a></li>
+						<li><a href="/bounty">Bounty</a></li>
+						<li><a href="#advisory">Команда</a></li>
+						<li><a href="#faq">FAQ</a></li>
+						<li><a href="http://badaboom.fun/blog">BLOG</a></li>						
+					</ul>
+				</nav>
+				<div class="toggle_menu">
+	                <span></span>
+	            </div>
+	            <div class="buttons_wrap">
+	                
+	            	<!-- <button class="buy">Buy clt</button> -->
+					<a href="/cab/auth.html"><button class="register"></button></a>
+	            </div>
+			</div>
+		</div>
+		<div class="header content">
+			<h2>Новое поколение<br/><span>человеческих взаимоотношений</span></h2>
+			<p>Мы трансформируем общество (создание нового рынка впечатлений)</p>
+			<div class="wrap_timer">
+				<div class="countdown">
+					<span id="timer"></span>
+					<p>Время до запуска на PRE-IСO</p>
+				</div>
+			</div>
+			<!-- <a  class="download" href="pdf/badaboom.pdf" target="_blank">Скачать White Paper</a> -->
+			<div class="subscribe">
+				<p>предварительная продажа</p>
+				<form action="javascript:void(null);" onsubmit="call()" class="subscribe_email">
+					<input class="text_light" type="email" placeholder="Введите Ваш email" name="email" required>
+					<button>отправить</button>
+				</form>
+			</div>
+			<button>Скачать для iOS</button>
+		</div>
+	</header>
+	<div class="main">
+		<!--<section class="calculator content">
+			<div class="dashboard content">
+				<ul>
+					<li class="dashboard_fill">
+					</li>
+					<li class="dashboard_item first_item complete">
+						<div class="btc">
+							<p><span>0</span>ml</p>
+						</div>
+						<div class="bonus">
+							<span>+30% Бонус</span>
+						</div>
+					</li>
+					<li class="dashboard_item complete">
+						<div class="btc">
+							<p><span>25</span>ml</p>
+						</div>
+						<div class="bonus">
+							<span>+20% Бонус</span>
+						</div>
+					</li>
+					<li class="dashboard_item">
+						<div class="btc">
+							<p><span>50</span>ml</p>
+						</div>
+						<div class="bonus">
+							<span>+10% Бонус</span>
+						</div>
+					</li>
+					<li class="dashboard_item">
+						<div class="btc">
+							<p><span>125</span>ml</p>
+						</div>
+						<div class="bonus">
+							<span>+5% Бонус</span>
+						</div>
+					</li>
+					<li class="dashboard_item dashboard_item_last">
+						<div class="btc">
+							<p><span>150</span>ml</p>
+						</div>
+					</li>
+				</ul>
+			</div>
+			<div class="dashboard_form content">
+				<button>BUY</button>
+				<div class="box_qty">
+					<div class="box_qty_form">
+						<input type="text" name="q" id="amount_TFL_to_buy" value="10000" class="box_qty_form_input" placeholder="">
+						<div class="box_qty_form_btn">
+							<a href="index.html#" data-control="plus" class="qty_up box_qty__plus"></a>
+							<a href="index.html#" data-control="minus" class="qty_down box_qty__minus"></a>
+						</div>
+					</div>-->
+					<!-- <p>1 NFT = <span class="curs">0.0008 BTC</span></p> -->
+				<!--</div>
+				<div class="box_bonus">
+					<div class="box_bonus_block">+ <span class="box_qty_me">2000</span> бонус</div>
+					
+					<a href="index.html#benefit"><i class="fa fa-gift fa-2x" aria-hidden="true"></i></a>
+				</div>
+			
+
+				<div class="box_select">
+					<div class="selectric_wrapper selectric_open">
+						<div class="selectric_hide_select">
+							<select name="s" tabindex="-1">
+								<option value="BTC" class="val_in inbtc">7.5472 BTC</option>
+								<option value="LTC" class="val_in inltc">476.1905 LTC</option>
+								<option value="ETH" class="val_in ineth">89.6861 ETH</option>
+								<option value="DASH" class="val_in indash">108.6956 DASH</option>
+								<option value="BTC" class="val_in inbtc">5000 USD</option>
+							</select>
+						</div>
+						<div class="selectric">
+
+							<span class="label">выбор валюты</span>
+							<b class="button">▾</b>
+						</div>
+						<div class="selectric_items" tabindex="-1">
+							<div class="selectric_scroll">
+								<ul>
+									<li data-index="0" class="val_in inbtc selected highlighted">7.5472 BTC</li>
+									<li data-index="1" class="val_in inltc">476.1905 LTC</li>
+									<li data-index="2" class="val_in ineth">89.6861 ETH</li>
+									<li data-index="3" class="val_in indash last">108.6956 DASH</li>
+									<li data-index="0" class="val_in inusd selected highlighted">5000 USD</li>
+								</ul>
+							</div>
+						</div>
+						<input class="selectric_input" tabindex="0" placeholder="">
+					</div>
+          </div>
+			</div>
+		</section>-->
+		<section class="goal content" id="goal">
+			<h3>Наша цель</h3>
+			<div>
+				<p class="text_light">Инновационное приложение для заработка криптовалют, основанное на системе блокчейн-технологий. Мы запускаем абсолютно новую схему майнинга, впервые открываем возможность прозрачного заработка на онлайн-трансляциях.</p>
+			</div>
+			<video id="Video1" controls loop autoplay="autoplay" preload>
+					<source src="video/Badaboom.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
+					<!-- <source src="/wp-content/themes/kitchen/video/kuh.webm" type='video/webm; codecs="vp8, vorbis"'> -->
+					</video>
+			<!-- <img src="img/video.jpg" alt="video"> -->
+		</section>
+		<section class="about content" id="about">
+			<h3>О проекте</h3>
+			<div class="left">
+				<div class="wrap_slider">
+					<div class="slider_phone owl-carousel">
+                        <%= image_tag "/assets/slide_phone_start.jpg"%>
+                      <%= image_tag "/assets/slide_phone_account.jpg"%>
+					</div>
+				</div>
+			</div>
+			<div class="right">
+				<div class="wrap_text">
+					<q>Badaboom - ключевой переворот в мире майнинга</q><br><br>
+					<p class="text_light">Badaboom - это инновационное приложение для заработка криптовалют, основанное на системе блокчейн-технологий. Мы запускаем абсолютно новую схему майнинга, впервые открываем возможность прозрачного заработка на онлайн-трансляциях! Полностью децентрализованная система, P2P, работающая по принципу Open source, открытого программного обеспечения, дает возможность использовать этот алгоритм не только на нашем сайте, но и на других всевозможных ресурсах. Тем самым обеспечивается максимальная безопасность ваших активов.</p>
+					<p class="text_light">По сравнению с ресурсозатратным майнингом, теперь заработок криптовалют для любого желающего также прост, как публикация нового поста в социальных сетях! В приложении вы можете выбрать самую увлекательную для себя рубрику и создать желаемое задание для выполнения другим человеком, либо самостоятельно. Средства для реализации этого желания будут собирать все заинтересованные люди, используя систему краудфандинга, коллективного финансирования.</p>
+					<p class="text_light">Если вы знаете о существовании некой проблемы и хотите заявить об этом на весь мир, или хотите помочь нуждающимся в чем-либо людям - то наше приложение создано именно для Вас. Вы можете рассказать людям о своих способностях, и если стремитесь сделать что-то выдающееся и неординарное, но не можете найти место и повод - Badaboom предоставляет уникальный инструмент личного пиара с возможностью самовыражения для всех и каждого!</p> 
+				</div>
+				<div class="button">
+					<button class="demo" name="#">ДЕМО BADABOOM V 10</button>
+				</div>
+			</div>
+		</section>
+		<section class="wrap_diff">
+			<div class="content">
+				<h3>Чем мы отличаемся от других проектов</h3>
+				<div class="diff">
+					<div>
+                        <%= image_tag "/assets/user.png"%>
+						
+						<p class="text_light"><b>Создаем новое поколение человеческих связей</b><br/><br/>В ваших руках оказывается уникальный инструмент личного пиара, привлекающий всеобщее внимание! Коллективное финансирование, основанное на системе блокчейн, дает возможность всем и каждому как  возможность самовыражения или выполнение интересных заданий, так и помощь нуждающимся и решение проблем.</p>
+					</div>
+					<div>
+                      <%= image_tag "/assets/fingerprint.png"%>
+						
+						<p class="text_light"><b>Новая индустрия рекламной площадки</b><br/><br/>Мы даем новый старт взаимоотношениям между рекламодателями и таргет-аудиторией, впервые предоставляя доступ к глобальной рекламной площадке, разворачивая масштабную PR-кампанию на всемирном уровне.</p>
+					</div>
+					<div>
+                      <%= image_tag "/assets/coins.png"%>
+						<p class="text_light"><b>Новый вид майнинга</b><br/><br/>Созданная система нового вида майнинга полностью децентрализована, P2P, и работает по принципу Open source, открытого программного обеспечения. Мы несем идею совершенно нового подхода к заработку и даем возможность использовать этот алгоритм не только на нашем сайте, но и на других всевозможных ресурсах, тем самым обеспечивая максимальную безопасность ваших активов.</p>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="roadmap content" id="ico">
+			<h3>Road Map</h3>
+			<ul>
+				<li class="complete">
+					<div class="stage ">
+						<p>Концепция</p>
+					</div>
+					<div class="development">
+						<p>2 месяца</p>
+						<p>разработка</p>
+					</div>
+				</li>
+				<li class="complete">
+					<div class="stage">
+						<p>Application</p>
+					</div>
+					<div class="development">
+						<p>6 месяцев</p>
+						<p>разработка</p>
+					</div>
+				</li>
+				<li class="complete here">
+					<div class="stage">
+						<p>White Paper</p>
+					</div>
+					<div class="development">
+						<p>1 месяц</p>
+						<p>разработка</p>
+					</div>
+					<div class="flag">
+	  					<p>Мы здесь!</p>
+					</div>
+				</li>
+				<li class="here">
+					<div class="stage">
+						<p>PR-кампания</p>
+					</div>
+					<div class="development">
+						<p>1 месяц</p>
+						<p>разработка</p>
+					</div>
+					<div class="flag">
+	  					<p>pre-ICO</p>
+					</div>
+				</li>
+				<li class="here">
+					<div class="stage">
+						<p>Разработка</p>
+					</div>
+					<div class="development">
+						<p>1 месяц</p>
+						<p>разработка</p>
+					</div>
+					<div class="flag">
+	  					<p>MVP</p>
+					</div>
+				</li>
+				<li class="here">
+					<div class="stage">
+						<p>PR-кампания</p>
+					</div>
+					<div class="development">
+						<p>1 месяц</p>
+						<p>разработка</p>
+					</div>
+					<div class="flag">
+	  					<p>ICO</p>
+					</div>
+				</li>
+			</ul>
+			<div class="wrap-download">
+				<div></div>
+				<a  class="download"  href="pdf/badaboom.pdf" target="_blank">Скачать White Paper</a>
+				<div></div>
+			</div>
+		</section>
+<!-- 		<section class="donut_chart content clearfix">
+			<h3>Распределение token между участниками</h3>
+			<div>
+  				<canvas id="donutchart"></canvas>
+			</div>
+			<div class="description">
+				<p class="text_light">Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.</p><p class="text_light">Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit.</p>
+			</div>
+		</section> -->
+		<section class="piechart content clearfix">
+			<h3>Распределение token по направлениям</h3>
+<!-- 			<img src="img/piechart.png" alt="piechart">
+			<div class="info">
+				<h4>15% Heading Heading -</h4>
+				<p class="text_light">Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. </p>
+			</div>
+			<div class="info">
+				<h4>25% Heading Heading -</h4>
+				<p class="text_light">Duis sed odio sit amet nibh vulputate cursus a sit amet mauris.</p>
+			</div>
+			<div class="info">
+				<h4>43% Heading Heading -</h4>
+				<p class="text_light">Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.</p>
+			</div> -->
+			<div>
+  				<canvas id="piechart"></canvas>
+			</div>
+			<p class="text_light">В самом начале будeт создано 100'000'000 (сто миллионов) токенов. Из них 29'450'000 токенов BDB  будут выделены для команды + адвайзеров, и они не могут быть переданы другим. Оставшиеся 70'550'000 BDB будут распределены по следующему принципу: на этапах pre-ICO и ICO продается максимум 65'550'000 токенов BDB, из которых на pre-ICO продается 550'000, на ICO - 65'000'000 токенов. На баунти выделяется 3'000'000 токенов. На лотерее может быть распределено до 2'000'000 токенов. Все нераспроданные токены автоматически уничтожаются.</p>
+		</section>
+		<section class="wrap_benefits" id="benefit">
+			<div class="content">
+				<h3>Выпуск токенов</h3>
+				<div class="benefits">
+					<div>
+						<h5>Этап Pre-ICO</h5>
+						<p class="text_light"><span>На этом этапе цель собрать 382 500 у.е., продаваемых токенов - 0,55 млн. Будет реализована возможность предзаказа токенов которая закроется за 3 дня до проведения Pre-ICO.</span></p>
+					</div>
+					<div>
+						<h5>Этап ICO</h5>
+						<p class="text_light"><span>На этом этапе Hard CAP составит 78 млн $,  количество продаваемых токенов 65 млн. Будет реализована возможность предзаказа токенов которая закроется за 3 дня до проведения Pre-ICO. В случае если на ICO будут распроданы не все токены, они будут заморожены и проданы после запуска продукта в рамках собранного бюджета. Оставшиеся же токены будут проданы через 6 месяцев после ICO по цене 1.6 долларов за токен.</span></p>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="advisory content" id="advisory">
+			<h3>Консультанты</h3>
+			<div class="people">
+				<div class="person">
+					<div class="img"><%= image_tag "/assets/person1.jpg" %></div>
+					<p>nikolas rents</p>
+					<span>Manager Aenean sollicitudin</span>
+					<ul class="social clearfix">
+						<li><a href="https://www.facebook.com"><i class="fa fa-facebook"></i></a></li>
+						<li><a href="https://www.twitter.com/"><i class="fa fa-twitter"></i></a></li>
+						<li><a href="https://www.linkedin.com/"><i class="fa fa-linkedin"></i></a></li>
+					</ul>
+				</div>
+				<div class="person">
+					<div class="img"><%= image_tag "/assets/person2.jpg" %></div>
+					<p>nikolas rents</p>
+					<span>Aenean sollicitudin, lorem quis bibendum auctor</span>
+					<ul class="social clearfix">
+						<li><a href="https://www.facebook.com"><i class="fa fa-facebook"></i></a></li>
+						<li><a href="https://www.twitter.com/"><i class="fa fa-twitter"></i></a></li>
+						<li><a href="https://www.linkedin.com/"><i class="fa fa-linkedin"></i></a></li>
+					</ul>
+				</div>
+				<div class="person">
+					<div class="img"><%= image_tag "/assets/person3.jpg" %></div>
+					<p>nikolas rents</p>
+					<span>Manager Aenean sollicitudin</span>
+					<ul class="social clearfix">
+						<li><a href="https://www.facebook.com"><i class="fa fa-facebook"></i></a></li>
+						<li><a href="https://www.twitter.com/"><i class="fa fa-twitter"></i></a></li>
+						<li><a href="https://www.linkedin.com/"><i class="fa fa-linkedin"></i></a></li>
+					</ul>
+				</div>
+				<div class="person">
+					<div class="img"><%= image_tag "/assets/person4.jpg" %></div>
+					<p>nikolas rents</p>
+					<span>Manager Aenean sollicitudin</span>
+					<ul class="social clearfix">
+						<li><a href="https://www.facebook.com"><i class="fa fa-facebook"></i></a></li>
+						<li><a href="https://www.twitter.com/"><i class="fa fa-twitter"></i></a></li>
+						<li><a href="https://www.linkedin.com/"><i class="fa fa-linkedin"></i></a></li>
+					</ul>
+				</div>
+			</div>
+		</section>
+		<section class="team content" id="team">
+			<h3>Команда</h3>
+			<div class="people">
+				<div class="person">
+					<div class="img"><%= image_tag "/assets/person1.jpg" %></div>
+					<p>nikolas rents</p>
+					<span>Manager Aenean sollicitudin</span>
+					<ul class="social clearfix">
+						<li><a href="https://www.facebook.com"><i class="fa fa-facebook"></i></a></li>
+						<li><a href="https://www.twitter.com/"><i class="fa fa-twitter"></i></a></li>
+						<li><a href="https://www.linkedin.com/"><i class="fa fa-linkedin"></i></a></li>
+					</ul>
+				</div>
+				<div class="person">
+					<div class="img"><%= image_tag "/assets/person2.jpg" %></div>
+					<p>nikolas rents</p>
+					<span>Aenean sollicitudin, lorem quis bibendum auctor</span>
+					<ul class="social clearfix">
+						<li><a href="https://www.facebook.com"><i class="fa fa-facebook"></i></a></li>
+						<li><a href="https://www.twitter.com/"><i class="fa fa-twitter"></i></a></li>
+						<li><a href="https://www.linkedin.com/"><i class="fa fa-linkedin"></i></a></li>
+					</ul>
+				</div>
+				<div class="person">
+					<div class="img"><%= image_tag "/assets/person3.jpg" %></div>
+					<p>nikolas rents</p>
+					<span>Manager Aenean sollicitudin</span>
+					<ul class="social clearfix">
+						<li><a href="https://www.facebook.com"><i class="fa fa-facebook"></i></a></li>
+						<li><a href="https://www.twitter.com/"><i class="fa fa-twitter"></i></a></li>
+						<li><a href="https://www.linkedin.com/"><i class="fa fa-linkedin"></i></a></li>
+					</ul>
+				</div>
+				<div class="person">
+					<div class="img"><%= image_tag "/assets/person4.jpg" %></div>
+					<p>nikolas rents</p>
+					<span>Manager Aenean sollicitudin</span>
+					<ul class="social clearfix">
+						<li><a href="https://www.facebook.com"><i class="fa fa-facebook"></i></a></li>
+						<li><a href="https://www.twitter.com/"><i class="fa fa-twitter"></i></a></li>
+						<li><a href="https://www.linkedin.com/"><i class="fa fa-linkedin"></i></a></li>
+					</ul>
+				</div>
+				<div class="person">
+					<div class="img"><%= image_tag "/assets/person1.jpg" %></div>
+					<p>nikolas rents</p>
+					<span>Manager Aenean sollicitudin</span>
+					<ul class="social clearfix">
+						<li><a href="https://www.facebook.com"><i class="fa fa-facebook"></i></a></li>
+						<li><a href="https://www.twitter.com/"><i class="fa fa-twitter"></i></a></li>
+						<li><a href="https://www.linkedin.com/"><i class="fa fa-linkedin"></i></a></li>
+					</ul>
+				</div>
+				<div class="person">
+					<div class="img"><%= image_tag "/assets/person2.jpg" %></div>
+					<p>nikolas rents</p>
+					<span>Aenean sollicitudin, lorem quis bibendum auctor</span>
+					<ul class="social clearfix">
+						<li><a href="https://www.facebook.com"><i class="fa fa-facebook"></i></a></li>
+						<li><a href="https://www.twitter.com/"><i class="fa fa-twitter"></i></a></li>
+						<li><a href="https://www.linkedin.com/"><i class="fa fa-linkedin"></i></a></li>
+					</ul>
+				</div>
+				<div class="person">
+					<div class="img"><%= image_tag "/assets/person3.jpg" %></div>
+					<p>nikolas rents</p>
+					<span>Manager Aenean sollicitudin</span>
+					<ul class="social clearfix">
+						<li><a href="https://www.facebook.com"><i class="fa fa-facebook"></i></a></li>
+						<li><a href="https://www.twitter.com/"><i class="fa fa-twitter"></i></a></li>
+						<li><a href="https://www.linkedin.com/"><i class="fa fa-linkedin"></i></a></li>
+					</ul>
+				</div>
+				<div class="person">
+					<div class="img"><%= image_tag "/assets/person4.jpg" %></div>
+					<p>nikolas rents</p>
+					<span>Manager Aenean sollicitudin</span>
+					<ul class="social clearfix">
+						<li><a href="https://www.facebook.com"><i class="fa fa-facebook"></i></a></li>
+						<li><a href="https://www.twitter.com/"><i class="fa fa-twitter"></i></a></li>
+						<li><a href="https://www.linkedin.com/"><i class="fa fa-linkedin"></i></a></li>
+					</ul>
+				</div>
+			</div>
+		</section>
+		<section class="calculator content bottom">
+			<!-- <h3>Предварительная<br/>продажа</h3>
+						<div class="dashboard">
+				<ul>
+					<li class="dashboard_fill">
+					</li>
+					<li class="dashboard_item first_item complete">
+						<div class="btc">
+							<p><span>0</span>ml</p>
+						</div>
+						<div class="bonus">
+							<span>+30% Бонус</span>
+						</div>
+					</li>
+					<li class="dashboard_item complete">
+						<div class="btc">
+							<p><span>25</span>ml</p>
+						</div>
+						<div class="bonus">
+							<span>+20% Бонус</span>
+						</div>
+					</li>
+					<li class="dashboard_item">
+						<div class="btc">
+							<p><span>50</span>ml</p>
+						</div>
+						<div class="bonus">
+							<span>+10% Бонус</span>
+						</div>
+					</li>
+					<li class="dashboard_item">
+						<div class="btc">
+							<p><span>125</span>ml</p>
+						</div>
+						<div class="bonus">
+							<span>+5% Бонус</span>
+						</div>
+					</li>
+					<li class="dashboard_item dashboard_item_last">
+						<div class="btc">
+							<p><span>150</span>ml</p>
+						</div>
+					</li>
+				</ul>
+			</div>
+			<div class="dashboard_form content">
+				<button>BUY</button>
+				<div class="box_qty">
+					<div class="box_qty_form">
+						<input type="text" name="q" id="amount_TFL_to_buy" value="10000" class="box_qty_form_input" placeholder="">
+						<div class="box_qty_form_btn">
+							<a href="#" data-control="plus" class="qty_up box_qty__plus"></a>
+							<a href="#" data-control="minus" class="qty_down box_qty__minus"></a>
+						</div>
+					</div>
+				</div>
+				<div class="box_bonus">
+					<div class="box_bonus_block">+ <span class="box_qty_me">2000</span> бонус</div>
+					<a href="#benefit"><i class="fa fa-gift fa-2x" aria-hidden="true"></i></a>
+				</div>
+				<div class="box_select">
+					<div class="selectric_wrapper selectric_open">
+						<div class="selectric_hide_select">
+							<select name="s" tabindex="-1">
+								<option value="BTC" class="val_in inbtc">7.5472 BTC</option>
+								<option value="LTC" class="val_in inltc">476.1905 LTC</option>
+								<option value="ETH" class="val_in ineth">89.6861 ETH</option>
+								<option value="DASH" class="val_in indash">108.6956 DASH</option>
+								<option value="BTC" class="val_in inbtc">5000 USD</option>
+							</select>
+						</div>
+						<div class="selectric">
+							<span class="label">выбор валюты</span>
+							<b class="button">▾</b>
+						</div>
+						<div class="selectric_items" tabindex="-1">
+							<div class="selectric_scroll">
+								<ul>
+									<li data-index="0" class="val_in inbtc selected highlighted">7.5472 BTC</li>
+									<li data-index="1" class="val_in inltc">476.1905 LTC</li>
+									<li data-index="2" class="val_in ineth">89.6861 ETH</li>
+									<li data-index="3" class="val_in indash last">108.6956 DASH</li>
+									<li data-index="0" class="val_in inusd selected highlighted">5000 USD</li>
+								</ul>
+							</div>
+						</div>
+						<input class="selectric_input" tabindex="0" placeholder="">
+					</div>
+           		</div>
+			</div>-->
+			<div class="wrap-subscribe">
+				<p>Подпишись на наши обновления <br />
+				Вы точно не пропустите дату старта на PRE-ICO</p>
+				<div class="subscribe">
+					<form action="javascript:void(null);" onsubmit="call()" class="subscribe_email">
+						<input class="text_light" type="email" placeholder="Введите Ваш email" name="email" required>
+						<button>отправить</button>
+					</form>
+				</div>
+			</div>
+		</section>
+		<section id="faq" class="grey">
+			<div class="content">
+				<h3>FAQ</h3>
+				<ul>
+					<li>
+						<div class="item"><p>Как принять участия в вашем ICO?</p></div>
+						<div class="hint text_light"><p>На этапе ICO и pre-ICO , путем предварительной продажи токенов инвесторам, планируется финансирование проекта. На платформе проекта Вам необходимо завести кошелек, с помощью которого вы сможете оформить покупку токенов.</p></div>
+					</li>
+					<li>
+						<div class="item"><p>Какие гарантии безопасности?</p></div>
+						<div class="hint text_light"><p>Все ваши покупки и транзакции абсолютно прозрачны и их безопасность гарантируются системой блокчейн.</p></div>
+					</li>
+					<li>
+						<div class="item"><p>За счет чего я могу заработать, купив токены?</p></div>
+						<div class="hint text_light"><p>За счет роста биржевых акций. Также вы можете торговать криптовалютой в самом приложении. А максимально большую выгоду вы можете получить, купив их по самой низкой дисконтной цене на этапе pre-ICO.</p></div>
+					</li>
+					<li>
+						<div class="item"><p>Как мне можно начать майнить криптовалюту?</p></div>
+						<div class="hint text_light"><p>Любой пользователь, который запустит трансляцию, сможет заработать n-ное количество токенов.</p></div>
+					</li>
+					<li>
+						<div class="item"><p>Как можно купить токены вашего проекта?</p></div>
+						<div class="hint text_light"><p>Токены BDB по самому выгодному дисконту Вы можете купить на этапе  pre-ICO или ICO. Либо после их окончания на любой бирже криптовалют по рыночному курсу.</p></div>
+					</li>
+					<li>
+						<div class="item"><p>Какой exit? как я заберу свои деньги если проект не реализуется?</p></div>
+						<div class="hint text_light"><p>Вы в любой момент можете легко продать свои токены на бирже.</p></div>
+					</li>
+					<li>
+						<div class="item"><p>Если я рекламодатель, как я могу разместить информацию о своей компании?</p></div>
+						<div class="hint text_light"><p>Вам необходимо заключить с нами договор о предоставлении услуг маркетинга и продвижения Вашего продукта/услуги. После чего в рамках рекламной компании информация о вашем бренде будет добавляться при съемках в наиболее подходящий видео-контент для просмотра вашей целевой аудиторией.</p></div>
+					</li>
+				</ul>
+			</div>
+		</section>
+	</div>
+	<footer>
+		<div class="wrap_footer content">
+			<div class="footer_nav">
+				<a href="/" class="logo"><%= image_tag "/assets/logo.png" %></a>
+				<ul>
+					<li><a href="pdf/badaboom.pdf" target="_blank">White Paper</a></li>
+					<li><a href="index.html#goal">Наша цель</a></li>
+					<li><a href="index.html#about">О проекте</a></li>
+					<li><a href="index.html#ico">ICO</a></li>
+					<li><a href="index.html#bounty">Bounty</a></li>
+					<li><a href="index.html#advisory">Команда</a></li>
+					<li><a href="index.html#faq">FAQ</a></li>
+				</ul>
+			</div>
+			<div class="links">
+				<p>Ссылки</p>
+				<ul>
+					<li><a href="index.html#">Условия использования Соглашение</a></li>
+				</ul>
+			</div>
+			<div class="social">
+				<p>Социальные сети</p>
+				<ul>
+					<li><a href="https://www.youtube.com/"><i class="fa fa-youtube-play"></i></a></li>
+					<li><a href="https://twitter.com/"><i class="fa fa-twitter"></i></a></li>
+					<li><a href="https://www.facebook.com"><i class="fa fa-facebook"></i></a></li>
+					<li><a href="https://www.instagram.com"><i class="fa fa-instagram"></i></a></li>
+					<li><a href="https://www.linkedin.com/"><i class="fa fa-linkedin"></i></a></li>
+				</ul>
+			</div>
+		</div>
+		<div class="copyright">
+				<h6>Corporation Badaboom 2017</h6>
+		</div>
+	</footer>
+	 <!--Start of Tawk.to Script-->
+<script type="text/javascript">
+var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+(function(){
+var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+s1.async=true;
+s1.src='https://embed.tawk.to/59b85e704854b82732fefa89/default';
+s1.charset='UTF-8';
+s1.setAttribute('crossorigin','*');
+s0.parentNode.insertBefore(s1,s0);
+})();
+</script>
+<!--End of Tawk.to Script-->
+	<div class="top"><i class="fa fa-arrow-up"></i></div>
+<!-- 	<div id="gannt">
+		<img src="img/statistics.png" alt="Gannt Giagramm">
+		<div id="popup_close"></div>
+	</div> -->
+	
