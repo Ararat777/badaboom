@@ -1,0 +1,48 @@
+	<div id="large-header" class="large-header">
+     	<h1><a href="/"><img src="/assets/logo.png" alt="logo"></a></h1>
+     	<canvas id="x-canvas"></canvas>
+     	<div class="form">
+	      	<ul class="tab-group clearfix">
+		        <li class="tab active"><a href="#signup">Регистрация</a></li>
+		        <li class="tab"><a href="#login">Авторизация</a></li>
+	      	</ul>
+	      
+	     	<div class="tab-content">
+	        	<div id="signup">   
+	          		<h2>Создать аккаунт</h2>
+	          		<div class="error"><p>Error</p></div>
+	          		<%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>          
+	            		<div class="field-wrap">
+	              			<%= f.text_field :username, placeholder: "Username*", required: true,autofocus: true %>
+	            		</div>
+						<div class="field-wrap">
+	            			<%= f.email_field :email, placeholder: "Email*" %>
+	          			</div>
+						<div class="field-wrap">
+	            			<%= f.password_field :password, autocomplete: "off", placeholder: "Password*" %>
+	          			</div>
+	          			<div class="field-wrap">
+	            			<input id="check" type="checkbox" name="checkbox" class="check">
+	            			<label for="check" class="terms"><span class="icon"></span> Принять </label>
+	            			<a href="http://evm237.com/clitch_account/pdf/white_paper.pdf" target="_blank">условия продажи токенов</a>					
+	          			</div>
+	          			<%= f.button "Зарегистрироваться", class: "button button-block" %>
+	          		<% end %>
+	        	</div>
+	        	<div id="login">   
+	          		<h2>Вход в личный кабинет</h2>
+	          		<div class="error"><p>Error</p></div>
+					<%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
+						<div class="field-wrap">
+	            			<%= f.email_field :email, autofocus: true %>
+	          			</div>
+						<div class="field-wrap">
+	            			<%= f.password_field :password, autocomplete: "off" %>
+	          			</div>
+	          			<p class="forgot"><a href="auth.html#">Забыли пароль?</a></p>
+	          			<%= f.button "Войти", class: "button button-block" %>
+	          		<% end %>
+	        	</div>
+	    	</div>
+    	</div>  
+	</div>	

@@ -1,56 +1,6 @@
 $(document).ready(function(){
 
-    window.setInterval(countDown, 500);
-
-    function countDown() {
-        var now = new Date();
-        var future = new Date("10/15/2017 12:00:00");
-        var timeLeft = future - now;
-        var milli = timeLeft;
-
-        var seconds = milli / 1000;
-        var minutes = seconds / 60;
-        var hours = minutes / 60;
-        var days = hours / 24;
-        var spareSeconds = seconds % 60;
-        var spareMinutes = minutes % 60;
-        var spareHours = hours % 24;
-        var spareDays = days % 365;
-
-        minutes = parseInt(minutes);
-        hours = parseInt(hours);
-        days = parseInt(days);
-        spareSeconds = parseInt(spareSeconds);
-        spareMinutes = parseInt(spareMinutes);
-        spareHours = parseInt(spareHours);
-        spareDays = parseInt(spareDays);
-
-        days = padNumber(days);
-        hours = padNumber(hours);
-        minutes = padNumber(minutes);
-        spareSeconds = padNumber(spareSeconds);
-        spareMinutes = padNumber(spareMinutes);
-        spareHours = padNumber(spareHours);
-        spareDays = padNumber(spareDays);
-
-        timeLeft = spareDays + ":" + spareHours + ":" + spareMinutes + ":" + spareSeconds;
-        var mySpan = document.getElementById("timer");
-        mySpan.innerHTML = timeLeft;
-        // var myFooterSpan = document.getElementById("footer_timer");
-        // myFooterSpan.innerHTML = timeLeft;
-
-        if (milli <= 0) { //Time's run out! If all values go to zero
-          mySpan.innerHTML = "00:00:00";
-          // myFooterSpan.innerHTML = "00:00:00";
-        }
-    }
-
-    function padNumber(number) {
-      if (number < 10) {
-        number = "0" + number;
-      }
-      return number;
-    }
+    
 
     $("header nav, .box_bonus").on("click","a[href^='#']", function (event) {
             event.preventDefault();
@@ -100,89 +50,10 @@ $(document).ready(function(){
         return false;
     });
 
-
-    $('.language-select').click(function(){
-        $(this).toggleClass('open');
-    });
-
-    $('.container').click(function(){
-        $(this).toggleClass('flipped');
-    });
-
     $('#faq li > .item').click(function(){
         $(this).toggleClass('active');
         $(this).next('div').slideToggle(200);
     });
-
-    $('.gannt').click(function(){
-        $('#gannt').fadeIn();
-        if (window.innerWidth>1000) {
-            q_width = (window.innerWidth - $('#gannt').width())/2;
-        } else q_width = 0;
-        q_height = (window.innerHeight - $('#gannt').height())/2;
-        $('#gannt').css({
-            'left': q_width,
-            'top': q_height
-        });
-        $('body').append('<div id="fade"></div>');
-        $('#fade').css({'filter' : 'alpha(opacity=40)'}).fadeIn();
-        return false;
-    });
-
-    $("#popup_close").click(function(){
-        $('#gannt').fadeOut();
-        $('#fade').remove();
-    });
-    $(document).mouseup(function(e){
-        var container = $("#gannt");
-        if (container.has(e.target).length === 0){
-            $('#gannt').fadeOut();
-            $('#fade').remove();
-        };
-    });
-    $("#gannt").mouseup(function(e){
-        var container = $("#gannt");
-        if (container.has(e.target).length === 0){
-            return false;
-        };
-    });
-
-    // google.charts.load('current', {'packages':['corechart']});
-    // google.charts.setOnLoadCallback(drawChart);
-    // function drawChart() {
-    //     var percentage = google.visualization.arrayToDataTable([
-    //         ["Structure", "Percent"],
-    //         ["Supercomputer and infrastructure", 80.0],
-    //         ["Development", 10.0],
-    //         ["Marketing and PR", 7.0],
-    //         ["Research", 3.0]
-    //     ]);
-    //     var options = {
-    //         legend: {
-    //             position: "labeled",
-    //             textStyle: {fontSize: 22, fontName: "OpenSansRegular"}
-    //         },
-    //         chartArea: {width: "100%", height: "80%"},
-    //         pieSliceText: "none",
-    //         colors: ["#39d9b6", "#f4f083", "#78f8cf", "#a374f0"],
-    //         tooltip: { trigger: 'none' },
-    //         pieHole: 0
-    //     };
-    //     var chart = new google.visualization.PieChart(document.getElementById("piechart"));
-    //     var redrawChart = function () {
-    //         options.legend.position = (window.outerWidth < 768 ? "bottom" : "labeled");
-    //         options.pieSliceText = (window.outerWidth < 768 ? "percentage" : "none");
-    //         chart.draw(percentage, options);
-    //     };
-    //     redrawChart();
-
-    //     if (window.addEventListener) {
-    //         window.addEventListener("resize", redrawChart);
-    //     } else {
-    //         window.attachEvent("onresize", redrawChart);
-    //     }
-    // };
-
 
 
     $(".subscribe_email").submit(function() {
@@ -204,8 +75,7 @@ $(document).ready(function(){
 *
 */
 
-
-/*
+   
     var input = document.getElementById('amount_TFL_to_buy');
     var p = document.querySelector('.box_qty_me');
     var li = document.querySelectorAll('.selectric_items li');
@@ -218,10 +88,10 @@ $(document).ready(function(){
     var currency = [' BTC', ' LTC', ' ETH', ' DASH', ' USD'];
 
 
-    $('.selectric').click(function(){
-        $('.selectric_items').slideToggle();
-        return false;
-    });
+    // $('.selectric').click(function(){
+    //     $('.selectric_items').slideToggle();
+    //     return false;
+    // });
 
     $('.val_in').click(function(){
         if(!$(this).hasClass('selected')){ 
@@ -231,23 +101,21 @@ $(document).ready(function(){
             var selectActive = document.querySelector('.selected').innerHTML;
             var selectActive2 = labeSelectric.innerHTML = selectActive;
         }
-        var curs = $('.val_in.selected');
-        var span_curs = $('.curs');
-        if(curs.hasClass('inbtc')){
-            span_curs.html((Math.round(1/q[0] * 10000) / 10000)+currency[0]);
-        } else if(curs.hasClass('inltc')){
-            span_curs.html((Math.round(1/q[1] * 10000) / 10000)+currency[1]);
-        } else if(curs.hasClass('ineth')){
-            span_curs.html((Math.round(1/q[2] * 10000) / 10000)+currency[2]);
-        } else if(curs.hasClass('indash')){
-            span_curs.html((Math.round(1/q[3] * 10000) / 10000)+currency[3]);
-        } else if(curs.hasClass('inusd')){
-            span_curs.html((Math.round(1/q[4] * 10000) / 10000)+currency[3]);
-        }
+        // var curs = $('.val_in.selected');
+        // var span_curs = $('.curs');
+        // if(curs.hasClass('inbtc')){
+        //     span_curs.html((Math.round(1/q[0] * 10000) / 10000)+currency[0]);
+        // } else if(curs.hasClass('inltc')){
+        //     span_curs.html((Math.round(1/q[1] * 10000) / 10000)+currency[1]);
+        // } else if(curs.hasClass('ineth')){
+        //     span_curs.html((Math.round(1/q[2] * 10000) / 10000)+currency[2]);
+        // } else if(curs.hasClass('indash')){
+        //     span_curs.html((Math.round(1/q[3] * 10000) / 10000)+currency[3]);
+        // } else if(curs.hasClass('inusd')){
+        //     span_curs.html((Math.round(1/q[4] * 10000) / 10000)+currency[3]);
+        // }
+
     });
-
-
-
 
     
     function bindOutput(targetElement, targetElementTotal) {
@@ -257,20 +125,15 @@ $(document).ready(function(){
             console.log(tElementTotal);
         };
     }
-    // function bindTotal(targetElement) {
-    //     return function(newValue) {
-    //         targetElement.innerHTML = newValue*0.2^0;;
-    //     };
-    // }
     function bind2Output(tElement) {
         return function() {
             var inputValue = +(input.value);
             for (var i = 0; i < tElement.length; i++) {
-                var element = (inputValue/q[i]);
-                element = (Math.round(element * 10000) / 10000) + currency[i];
+                var element = (inputValue/q[2]);
+                element = (Math.round(element * 10000) / 10000) + currency[2];
 
                 var num = !isNaN(inputValue);
-                tElement[i].innerHTML = num ? element : 0 + currency[i];
+                tElement[i].innerHTML = num ? element : 0 + currency[2];
             }
             return tElement;       
         };
@@ -310,7 +173,7 @@ $(document).ready(function(){
         return labeSelectric.innerHTML = selectActive;
     }
    
-    var pOutput = bindOutput(p, total_money);
+    var pOutput = bindOutput(p, selectActive);
     var liOutput = bind2Output(li);
     var callbacks = getCallbacks(input, pOutput, liOutput);
     input.addEventListener('input', compose(mapEventToValue, pOutput));
@@ -326,7 +189,42 @@ $(document).ready(function(){
         typeof callbacks[controlType] === 'function' && callbacks[controlType]();
     });
 
-*/
+
+
+
+    $('.calculator_benefits input').on('input', function() {
+        var i1 = +document.getElementById("i1").value; 
+        var i2 = +document.getElementById("i2").value;
+        var i3 = +document.getElementById("i3").value;
+        var i4 = 25;
+        var result = document.getElementById("result");
+        var x;
+
+        x=i3*((i1/i4)*(i2/i4))*(i3/i1);
+
+        if( i1 <= 0 || i2 <= 0 || i3 <= 0){
+            x = 0;
+        } else if(i1>10000&&i2<20000) {
+            x*=0.9;
+        } if(i1>20000&&i2<30000) {
+            x*=0.8;
+        } if(i1>30000&&i2<40000) {
+            x*=0.7;
+        } if(i1>50000&&i2<60000) {
+            x*=0.6;
+        } if(i1>60000&&i2<70000) {
+            x*=0.5;
+        } if(i1>70000&&i2<80000) {
+            x*=0.4;
+        } if(i1>90000&&i2<100000) {
+            x*=0.3;
+        } else if(i1>100000) {
+            x*=0.1;
+        }
+        result.innerHTML = x.toFixed(3);
+    });
+
+
     $(".slider_phone.owl-carousel").owlCarousel({
         items : 1,
         nav : true,
@@ -440,38 +338,5 @@ $(document).ready(function(){
         }
       }
     });
-
-
-    var dataDonut = {
-      labels: [
-        "Heading1",
-        "Heading2",
-        "Heading3"
-      ],
-      datasets: [{
-        data: [70, 20, 10],
-        backgroundColor: [
-          "#984ee7",
-          "#c751cd",
-          "#00baff"
-        ],
-        hoverBackgroundColor: [
-          "#b487e5",
-          "#d48cd8",
-          "#5bcdf7"
-        ]
-      }]
-    };
-    var donut = $("#donutchart");
-    var myDonut = new Chart(donut, {
-      type: 'doughnut',
-      data: dataDonut,
-      options: {
-        legend: {
-          display: false,
-        }
-      }
-    });
-
 
 });

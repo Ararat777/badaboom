@@ -1,29 +1,24 @@
-
 	<header>
-	   
 		<div class="wrap_top_line">
 			<div class="top_line content">
-			     
-				<h1><a href="/" class="logo"><%= image_tag "/assets/logo.png" %></a></h1>
+				<h1><a href="/" class="logo"><img src="/assets/logo.png" alt="badaboom"></a></h1>
 				<nav>
 					<ul>
 						<li><a href="pdf/badaboom.pdf" target="_blank">White Paper</a></li>
 						<li><a href="#goal">Наша цель</a></li>
 						<li><a href="#about">О проекте</a></li>
 						<li><a href="#ico">ICO</a></li>
-						<li><a href="/bounty">Bounty</a></li>
+						<li><a href="bounty.html">Bounty</a></li>
 						<li><a href="#advisory">Команда</a></li>
 						<li><a href="#faq">FAQ</a></li>
-						<li><a href="http://badaboom.fun/blog">BLOG</a></li>						
 					</ul>
 				</nav>
 				<div class="toggle_menu">
 	                <span></span>
 	            </div>
 	            <div class="buttons_wrap">
-	                
-	            	<!-- <button class="buy">Buy clt</button> -->
-					<a href="/cab/auth.html"><button class="register"></button></a>
+	            	<a href="/users/sign_in" class="buy">Buy bdb</a>
+					<!-- <button class="register"></button> -->
 	            </div>
 			</div>
 		</div>
@@ -39,23 +34,23 @@
 			<!-- <a  class="download" href="pdf/badaboom.pdf" target="_blank">Скачать White Paper</a> -->
 			<div class="subscribe">
 				<p>предварительная продажа</p>
-				<form action="javascript:void(null);" onsubmit="call()" class="subscribe_email">
+				<form action="#" method="POST" class="subscribe_email">
 					<input class="text_light" type="email" placeholder="Введите Ваш email" name="email" required>
 					<button>отправить</button>
 				</form>
 			</div>
-			<button>Скачать для iOS</button>
+			<button class="ios">Скачать для iOS</button>
 		</div>
 	</header>
 	<div class="main">
-		<!--<section class="calculator content">
+		<section class="calculator content">
 			<div class="dashboard content">
 				<ul>
 					<li class="dashboard_fill">
 					</li>
 					<li class="dashboard_item first_item complete">
 						<div class="btc">
-							<p><span>0</span>ml</p>
+							<p><span>0</span>млн</p>
 						</div>
 						<div class="bonus">
 							<span>+30% Бонус</span>
@@ -63,7 +58,7 @@
 					</li>
 					<li class="dashboard_item complete">
 						<div class="btc">
-							<p><span>25</span>ml</p>
+							<p><span>25</span>млн</p>
 						</div>
 						<div class="bonus">
 							<span>+20% Бонус</span>
@@ -71,7 +66,7 @@
 					</li>
 					<li class="dashboard_item">
 						<div class="btc">
-							<p><span>50</span>ml</p>
+							<p><span>50</span>млн</p>
 						</div>
 						<div class="bonus">
 							<span>+10% Бонус</span>
@@ -79,7 +74,7 @@
 					</li>
 					<li class="dashboard_item">
 						<div class="btc">
-							<p><span>125</span>ml</p>
+							<p><span>125</span>млн</p>
 						</div>
 						<div class="bonus">
 							<span>+5% Бонус</span>
@@ -87,7 +82,7 @@
 					</li>
 					<li class="dashboard_item dashboard_item_last">
 						<div class="btc">
-							<p><span>150</span>ml</p>
+							<p><span>150</span>млн</p>
 						</div>
 					</li>
 				</ul>
@@ -98,69 +93,56 @@
 					<div class="box_qty_form">
 						<input type="text" name="q" id="amount_TFL_to_buy" value="10000" class="box_qty_form_input" placeholder="">
 						<div class="box_qty_form_btn">
-							<a href="index.html#" data-control="plus" class="qty_up box_qty__plus"></a>
-							<a href="index.html#" data-control="minus" class="qty_down box_qty__minus"></a>
+							<a href="#" data-control="plus" class="qty_up box_qty__plus"></a>
+							<a href="#" data-control="minus" class="qty_down box_qty__minus"></a>
 						</div>
-					</div>-->
-					<!-- <p>1 NFT = <span class="curs">0.0008 BTC</span></p> -->
-				<!--</div>
+					</div>
+				</div>
 				<div class="box_bonus">
 					<div class="box_bonus_block">+ <span class="box_qty_me">2000</span> бонус</div>
 					
-					<a href="index.html#benefit"><i class="fa fa-gift fa-2x" aria-hidden="true"></i></a>
+					<a href="#benefit"><i class="fa fa-gift fa-2x" aria-hidden="true"></i></a>
 				</div>
-			
 
 				<div class="box_select">
 					<div class="selectric_wrapper selectric_open">
-						<div class="selectric_hide_select">
-							<select name="s" tabindex="-1">
-								<option value="BTC" class="val_in inbtc">7.5472 BTC</option>
-								<option value="LTC" class="val_in inltc">476.1905 LTC</option>
-								<option value="ETH" class="val_in ineth">89.6861 ETH</option>
-								<option value="DASH" class="val_in indash">108.6956 DASH</option>
-								<option value="BTC" class="val_in inbtc">5000 USD</option>
-							</select>
-						</div>
 						<div class="selectric">
 
-							<span class="label">выбор валюты</span>
-							<b class="button">▾</b>
+							<span class="label">89.6861 ETH</span>
+							<!-- <b class="button">▾</b> -->
 						</div>
 						<div class="selectric_items" tabindex="-1">
 							<div class="selectric_scroll">
 								<ul>
-									<li data-index="0" class="val_in inbtc selected highlighted">7.5472 BTC</li>
-									<li data-index="1" class="val_in inltc">476.1905 LTC</li>
-									<li data-index="2" class="val_in ineth">89.6861 ETH</li>
-									<li data-index="3" class="val_in indash last">108.6956 DASH</li>
-									<li data-index="0" class="val_in inusd selected highlighted">5000 USD</li>
+									<!-- <li data-index="0" class="val_in inbtc">7.5472 BTC</li> -->
+									<!-- <li data-index="1" class="val_in inltc">476.1905 LTC</li> -->
+									<li data-index="2" class="val_in ineth selected highlighted">89.6861 ETH</li>
+									<!-- <li data-index="3" class="val_in indash last">108.6956 DASH</li> -->
+									<!-- <li data-index="0" class="val_in inusd selected highlighted">5000 USD</li> -->
 								</ul>
 							</div>
 						</div>
 						<input class="selectric_input" tabindex="0" placeholder="">
 					</div>
-          </div>
+          		</div>
 			</div>
-		</section>-->
+		</section>
 		<section class="goal content" id="goal">
 			<h3>Наша цель</h3>
 			<div>
 				<p class="text_light">Инновационное приложение для заработка криптовалют, основанное на системе блокчейн-технологий. Мы запускаем абсолютно новую схему майнинга, впервые открываем возможность прозрачного заработка на онлайн-трансляциях.</p>
 			</div>
-			<video id="Video1" controls loop autoplay="autoplay" preload>
-					<source src="video/Badaboom.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
-					<!-- <source src="/wp-content/themes/kitchen/video/kuh.webm" type='video/webm; codecs="vp8, vorbis"'> -->
-					</video>
-			<!-- <img src="img/video.jpg" alt="video"> -->
+			<div class="video">
+				<iframe src="https://www.youtube.com/embed/5Q3yHjRPZBw?rel=0" allowfullscreen=""></iframe>
+            </div>
 		</section>
 		<section class="about content" id="about">
 			<h3>О проекте</h3>
 			<div class="left">
 				<div class="wrap_slider">
 					<div class="slider_phone owl-carousel">
-                        <%= image_tag "/assets/slide_phone_start.jpg"%>
-                      <%= image_tag "/assets/slide_phone_account.jpg"%>
+						<img src="/assets/slide_phone_start.jpg" alt="phone_start">
+						<img src="/assets/slide_phone_account.jpg" alt="phone_account">
 					</div>
 				</div>
 			</div>
@@ -181,17 +163,15 @@
 				<h3>Чем мы отличаемся от других проектов</h3>
 				<div class="diff">
 					<div>
-                        <%= image_tag "/assets/user.png"%>
-						
+						<img src="/assets/user.png" alt="user">
 						<p class="text_light"><b>Создаем новое поколение человеческих связей</b><br/><br/>В ваших руках оказывается уникальный инструмент личного пиара, привлекающий всеобщее внимание! Коллективное финансирование, основанное на системе блокчейн, дает возможность всем и каждому как  возможность самовыражения или выполнение интересных заданий, так и помощь нуждающимся и решение проблем.</p>
 					</div>
 					<div>
-                      <%= image_tag "/assets/fingerprint.png"%>
-						
+						<img src="/assets/fingerprint.png" alt="fingerprint">
 						<p class="text_light"><b>Новая индустрия рекламной площадки</b><br/><br/>Мы даем новый старт взаимоотношениям между рекламодателями и таргет-аудиторией, впервые предоставляя доступ к глобальной рекламной площадке, разворачивая масштабную PR-кампанию на всемирном уровне.</p>
 					</div>
 					<div>
-                      <%= image_tag "/assets/coins.png"%>
+						<img src="/assets/coins.png" alt="coins">
 						<p class="text_light"><b>Новый вид майнинга</b><br/><br/>Созданная система нового вида майнинга полностью децентрализована, P2P, и работает по принципу Open source, открытого программного обеспечения. Мы несем идею совершенно нового подхода к заработку и даем возможность использовать этот алгоритм не только на нашем сайте, но и на других всевозможных ресурсах, тем самым обеспечивая максимальную безопасность ваших активов.</p>
 					</div>
 				</div>
@@ -235,7 +215,7 @@
 						<p>PR-кампания</p>
 					</div>
 					<div class="development">
-						<p>1 месяц</p>
+						<p>3 недели</p>
 						<p>разработка</p>
 					</div>
 					<div class="flag">
@@ -284,23 +264,10 @@
 		</section> -->
 		<section class="piechart content clearfix">
 			<h3>Распределение token по направлениям</h3>
-<!-- 			<img src="img/piechart.png" alt="piechart">
-			<div class="info">
-				<h4>15% Heading Heading -</h4>
-				<p class="text_light">Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. </p>
-			</div>
-			<div class="info">
-				<h4>25% Heading Heading -</h4>
-				<p class="text_light">Duis sed odio sit amet nibh vulputate cursus a sit amet mauris.</p>
-			</div>
-			<div class="info">
-				<h4>43% Heading Heading -</h4>
-				<p class="text_light">Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.</p>
-			</div> -->
 			<div>
   				<canvas id="piechart"></canvas>
 			</div>
-			<p class="text_light">В самом начале будeт создано 100'000'000 (сто миллионов) токенов. Из них 29'450'000 токенов BDB  будут выделены для команды + адвайзеров, и они не могут быть переданы другим. Оставшиеся 70'550'000 BDB будут распределены по следующему принципу: на этапах pre-ICO и ICO продается максимум 65'550'000 токенов BDB, из которых на pre-ICO продается 550'000, на ICO - 65'000'000 токенов. На баунти выделяется 3'000'000 токенов. На лотерее может быть распределено до 2'000'000 токенов. Все нераспроданные токены автоматически уничтожаются.</p>
+			<p class="text_light">В самом начале будeт создано 100'000'000 (сто миллионов) токенов. Из них 29'450'000 токенов BDB  будут выделены для команды + адвайзеров, и они не могут быть переданы другим. Оставшиеся 70'550'000 BDB будут распределены по следующему принципу: на этапах pre-ICO и ICO продается максимум 65'550'000 токенов BDB, из которых на pre-ICO продается 550'000, на ICO - 65'000'000 токенов. На баунти выделяется 3'000'000 токенов. На лотерее может быть распределено до 2'000'000 токенов, все нераспроданные на лотерее токены автоматически уничтожаются.</p>
 		</section>
 		<section class="wrap_benefits" id="benefit">
 			<div class="content">
@@ -315,13 +282,42 @@
 						<p class="text_light"><span>На этом этапе Hard CAP составит 78 млн $,  количество продаваемых токенов 65 млн. Будет реализована возможность предзаказа токенов которая закроется за 3 дня до проведения Pre-ICO. В случае если на ICO будут распроданы не все токены, они будут заморожены и проданы после запуска продукта в рамках собранного бюджета. Оставшиеся же токены будут проданы через 6 месяцев после ICO по цене 1.6 долларов за токен.</span></p>
 					</div>
 				</div>
+				<h4>Формула расчета майнинга</h4>
+				<div class="calculator_benefits">
+					<div>
+					    <label for="i1">Количество просмотров (конец эфира)</label>
+					    <input id="i1" type="number" value="0" min="0" step="10">
+					</div>
+					<div>
+					    <label for="i2">Количество просмотров (середина эфира)</label>
+					    <input id="i2" type="number" value="0" min="0" step="10">
+					</div>
+					<div>
+					    <label for="i3">Время эфира (минуты)</label>
+					    <input id="i3" type="number" value="0" min="0" step="10">
+					</div>
+					<div>
+					    <p>Результат (токены)</p>
+					    <span id="result">0.000</span>       
+					</div>
+				</div> 
+				<div class="wrap-subscribe">
+					<p>Подпишись на наши обновления <br />
+					Вы точно не пропустите дату старта на PRE-ICO</p>
+					<div class="subscribe">
+						<form action="javascript:void(null);" onsubmit="call()" class="subscribe_email">
+							<input class="text_light" type="email" placeholder="Введите Ваш email" name="email" required>
+							<button>отправить</button>
+						</form>
+					</div>
+				</div>
 			</div>
 		</section>
 		<section class="advisory content" id="advisory">
 			<h3>Консультанты</h3>
 			<div class="people">
 				<div class="person">
-					<div class="img"><%= image_tag "/assets/person1.jpg" %></div>
+					<div class="img"><img src="/assets/person1.jpg" alt="person"></div>
 					<p>nikolas rents</p>
 					<span>Manager Aenean sollicitudin</span>
 					<ul class="social clearfix">
@@ -331,7 +327,7 @@
 					</ul>
 				</div>
 				<div class="person">
-					<div class="img"><%= image_tag "/assets/person2.jpg" %></div>
+					<div class="img"><img src="/assets/person2.jpg" alt="person"></div>
 					<p>nikolas rents</p>
 					<span>Aenean sollicitudin, lorem quis bibendum auctor</span>
 					<ul class="social clearfix">
@@ -341,7 +337,7 @@
 					</ul>
 				</div>
 				<div class="person">
-					<div class="img"><%= image_tag "/assets/person3.jpg" %></div>
+					<div class="img"><img src="/assets/person3.jpg" alt="person"></div>
 					<p>nikolas rents</p>
 					<span>Manager Aenean sollicitudin</span>
 					<ul class="social clearfix">
@@ -351,7 +347,7 @@
 					</ul>
 				</div>
 				<div class="person">
-					<div class="img"><%= image_tag "/assets/person4.jpg" %></div>
+					<div class="img"><img src="/assets/person4.jpg" alt="person"></div>
 					<p>nikolas rents</p>
 					<span>Manager Aenean sollicitudin</span>
 					<ul class="social clearfix">
@@ -366,7 +362,7 @@
 			<h3>Команда</h3>
 			<div class="people">
 				<div class="person">
-					<div class="img"><%= image_tag "/assets/person1.jpg" %></div>
+					<div class="img"><img src="/assets/person1.jpg" alt="person"></div>
 					<p>nikolas rents</p>
 					<span>Manager Aenean sollicitudin</span>
 					<ul class="social clearfix">
@@ -376,7 +372,7 @@
 					</ul>
 				</div>
 				<div class="person">
-					<div class="img"><%= image_tag "/assets/person2.jpg" %></div>
+					<div class="img"><img src="/assets/person2.jpg" alt="person"></div>
 					<p>nikolas rents</p>
 					<span>Aenean sollicitudin, lorem quis bibendum auctor</span>
 					<ul class="social clearfix">
@@ -386,7 +382,7 @@
 					</ul>
 				</div>
 				<div class="person">
-					<div class="img"><%= image_tag "/assets/person3.jpg" %></div>
+					<div class="img"><img src="/assets/person3.jpg" alt="person"></div>
 					<p>nikolas rents</p>
 					<span>Manager Aenean sollicitudin</span>
 					<ul class="social clearfix">
@@ -396,7 +392,7 @@
 					</ul>
 				</div>
 				<div class="person">
-					<div class="img"><%= image_tag "/assets/person4.jpg" %></div>
+					<div class="img"><img src="/assets/person4.jpg" alt="person"></div>
 					<p>nikolas rents</p>
 					<span>Manager Aenean sollicitudin</span>
 					<ul class="social clearfix">
@@ -406,7 +402,7 @@
 					</ul>
 				</div>
 				<div class="person">
-					<div class="img"><%= image_tag "/assets/person1.jpg" %></div>
+					<div class="img"><img src="/assets/person1.jpg" alt="person"></div>
 					<p>nikolas rents</p>
 					<span>Manager Aenean sollicitudin</span>
 					<ul class="social clearfix">
@@ -416,7 +412,7 @@
 					</ul>
 				</div>
 				<div class="person">
-					<div class="img"><%= image_tag "/assets/person2.jpg" %></div>
+					<div class="img"><img src="/assets/person2.jpg" alt="person"></div>
 					<p>nikolas rents</p>
 					<span>Aenean sollicitudin, lorem quis bibendum auctor</span>
 					<ul class="social clearfix">
@@ -426,7 +422,7 @@
 					</ul>
 				</div>
 				<div class="person">
-					<div class="img"><%= image_tag "/assets/person3.jpg" %></div>
+					<div class="img"><img src="/assets/person3.jpg" alt="person"></div>
 					<p>nikolas rents</p>
 					<span>Manager Aenean sollicitudin</span>
 					<ul class="social clearfix">
@@ -436,7 +432,7 @@
 					</ul>
 				</div>
 				<div class="person">
-					<div class="img"><%= image_tag "/assets/person4.jpg" %></div>
+					<div class="img"><img src="/assets/person4.jpg" alt="person"></div>
 					<p>nikolas rents</p>
 					<span>Manager Aenean sollicitudin</span>
 					<ul class="social clearfix">
@@ -448,100 +444,11 @@
 			</div>
 		</section>
 		<section class="calculator content bottom">
-			<!-- <h3>Предварительная<br/>продажа</h3>
-						<div class="dashboard">
-				<ul>
-					<li class="dashboard_fill">
-					</li>
-					<li class="dashboard_item first_item complete">
-						<div class="btc">
-							<p><span>0</span>ml</p>
-						</div>
-						<div class="bonus">
-							<span>+30% Бонус</span>
-						</div>
-					</li>
-					<li class="dashboard_item complete">
-						<div class="btc">
-							<p><span>25</span>ml</p>
-						</div>
-						<div class="bonus">
-							<span>+20% Бонус</span>
-						</div>
-					</li>
-					<li class="dashboard_item">
-						<div class="btc">
-							<p><span>50</span>ml</p>
-						</div>
-						<div class="bonus">
-							<span>+10% Бонус</span>
-						</div>
-					</li>
-					<li class="dashboard_item">
-						<div class="btc">
-							<p><span>125</span>ml</p>
-						</div>
-						<div class="bonus">
-							<span>+5% Бонус</span>
-						</div>
-					</li>
-					<li class="dashboard_item dashboard_item_last">
-						<div class="btc">
-							<p><span>150</span>ml</p>
-						</div>
-					</li>
-				</ul>
-			</div>
-			<div class="dashboard_form content">
-				<button>BUY</button>
-				<div class="box_qty">
-					<div class="box_qty_form">
-						<input type="text" name="q" id="amount_TFL_to_buy" value="10000" class="box_qty_form_input" placeholder="">
-						<div class="box_qty_form_btn">
-							<a href="#" data-control="plus" class="qty_up box_qty__plus"></a>
-							<a href="#" data-control="minus" class="qty_down box_qty__minus"></a>
-						</div>
-					</div>
-				</div>
-				<div class="box_bonus">
-					<div class="box_bonus_block">+ <span class="box_qty_me">2000</span> бонус</div>
-					<a href="#benefit"><i class="fa fa-gift fa-2x" aria-hidden="true"></i></a>
-				</div>
-				<div class="box_select">
-					<div class="selectric_wrapper selectric_open">
-						<div class="selectric_hide_select">
-							<select name="s" tabindex="-1">
-								<option value="BTC" class="val_in inbtc">7.5472 BTC</option>
-								<option value="LTC" class="val_in inltc">476.1905 LTC</option>
-								<option value="ETH" class="val_in ineth">89.6861 ETH</option>
-								<option value="DASH" class="val_in indash">108.6956 DASH</option>
-								<option value="BTC" class="val_in inbtc">5000 USD</option>
-							</select>
-						</div>
-						<div class="selectric">
-							<span class="label">выбор валюты</span>
-							<b class="button">▾</b>
-						</div>
-						<div class="selectric_items" tabindex="-1">
-							<div class="selectric_scroll">
-								<ul>
-									<li data-index="0" class="val_in inbtc selected highlighted">7.5472 BTC</li>
-									<li data-index="1" class="val_in inltc">476.1905 LTC</li>
-									<li data-index="2" class="val_in ineth">89.6861 ETH</li>
-									<li data-index="3" class="val_in indash last">108.6956 DASH</li>
-									<li data-index="0" class="val_in inusd selected highlighted">5000 USD</li>
-								</ul>
-							</div>
-						</div>
-						<input class="selectric_input" tabindex="0" placeholder="">
-					</div>
-           		</div>
-			</div>-->
 			<div class="wrap-subscribe">
 				<p>Подпишись на наши обновления <br />
 				Вы точно не пропустите дату старта на PRE-ICO</p>
 				<div class="subscribe">
-					<form action="javascript:void(null);" onsubmit="call()" class="subscribe_email">
+					<form action="#" class="subscribe_email">
 						<input class="text_light" type="email" placeholder="Введите Ваш email" name="email" required>
 						<button>отправить</button>
 					</form>
@@ -587,21 +494,21 @@
 	<footer>
 		<div class="wrap_footer content">
 			<div class="footer_nav">
-				<a href="/" class="logo"><%= image_tag "/assets/logo.png" %></a>
+				<a href="index.html" class="logo"><img src="/assets/logo.png" alt="logo"></a>
 				<ul>
 					<li><a href="pdf/badaboom.pdf" target="_blank">White Paper</a></li>
-					<li><a href="index.html#goal">Наша цель</a></li>
-					<li><a href="index.html#about">О проекте</a></li>
-					<li><a href="index.html#ico">ICO</a></li>
-					<li><a href="index.html#bounty">Bounty</a></li>
-					<li><a href="index.html#advisory">Команда</a></li>
-					<li><a href="index.html#faq">FAQ</a></li>
+					<li><a href="#goal">Наша цель</a></li>
+					<li><a href="#about">О проекте</a></li>
+					<li><a href="#ico">ICO</a></li>
+					<li><a href="#bounty">Bounty</a></li>
+					<li><a href="#advisory">Команда</a></li>
+					<li><a href="#faq">FAQ</a></li>
 				</ul>
 			</div>
 			<div class="links">
 				<p>Ссылки</p>
 				<ul>
-					<li><a href="index.html#">Условия использования Соглашение</a></li>
+					<li><a href="#">Условия использования Соглашение</a></li>
 				</ul>
 			</div>
 			<div class="social">
@@ -619,22 +526,56 @@
 				<h6>Corporation Badaboom 2017</h6>
 		</div>
 	</footer>
-	 <!--Start of Tawk.to Script-->
-<script type="text/javascript">
-var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
-(function(){
-var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
-s1.async=true;
-s1.src='https://embed.tawk.to/59b85e704854b82732fefa89/default';
-s1.charset='UTF-8';
-s1.setAttribute('crossorigin','*');
-s0.parentNode.insertBefore(s1,s0);
-})();
-</script>
-<!--End of Tawk.to Script-->
 	<div class="top"><i class="fa fa-arrow-up"></i></div>
-<!-- 	<div id="gannt">
-		<img src="img/statistics.png" alt="Gannt Giagramm">
-		<div id="popup_close"></div>
-	</div> -->
-	
+	<script>
+      $(document).ready(function(){
+        window.setInterval(countDown, 500);
+
+        function countDown() {
+            var now = new Date();
+            var future = new Date("10/15/2017 12:00:00");
+            var timeLeft = future - now;
+            var milli = timeLeft;
+
+            var seconds = milli / 1000;
+            var minutes = seconds / 60;
+            var hours = minutes / 60;
+            var days = hours / 24;
+            var spareSeconds = seconds % 60;
+            var spareMinutes = minutes % 60;
+            var spareHours = hours % 24;
+            var spareDays = days % 365;
+
+            minutes = parseInt(minutes);
+            hours = parseInt(hours);
+            days = parseInt(days);
+            spareSeconds = parseInt(spareSeconds);
+            spareMinutes = parseInt(spareMinutes);
+            spareHours = parseInt(spareHours);
+            spareDays = parseInt(spareDays);
+
+            days = padNumber(days);
+            hours = padNumber(hours);
+            minutes = padNumber(minutes);
+            spareSeconds = padNumber(spareSeconds);
+            spareMinutes = padNumber(spareMinutes);
+            spareHours = padNumber(spareHours);
+            spareDays = padNumber(spareDays);
+
+            timeLeft = spareDays + ":" + spareHours + ":" + spareMinutes + ":" + spareSeconds;
+            var mySpan = document.getElementById("timer");
+            mySpan.innerHTML = timeLeft;
+
+            if (milli <= 0) { 
+              mySpan.innerHTML = "00:00:00";
+            }
+        }
+
+        function padNumber(number) {
+          if (number < 10) {
+            number = "0" + number;
+          }
+          return number;
+        }
+      });
+    </script>
